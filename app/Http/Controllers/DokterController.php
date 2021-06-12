@@ -19,9 +19,8 @@ class DokterController extends Controller
     public function index()
     {
         $dokter = Dokter::all();
-        return view('0248', ['dokter' => $dokter]);
+        return view('0248_view', ['dokter' => $dokter]);
     }
-
 
     public function export()
     {        
